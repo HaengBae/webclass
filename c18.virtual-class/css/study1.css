@@ -1,0 +1,31 @@
+* {margin: 0; padding: 0;}
+.a {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 
+    width 0.3s ease 0s,
+    padding 1s ease 0.3s;
+}
+.a:hover {
+    background-color: blue;
+    width: 200px;
+    color: #fff;
+    padding :30px;
+}
+.a:active {
+    border:4px solid lime;
+}
+.b:before {
+    content: "안녕하세요. ";
+    border:1px solid red;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b:after {
+    content: " 잘부탁드립니다.";
+    border:1px solid blue
+    ;
+}

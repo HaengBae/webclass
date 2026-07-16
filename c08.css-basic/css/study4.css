@@ -1,0 +1,12 @@
+div h2#a.a {color: brown;}
+h2#a.a {color: chartreuse;}
+h2#a{color: blueviolet;}
+#a {color: salmon;}
+h2.a{color: red;}
+h2.a.b{color: blue;}
+.a {color: orange;}
+.a {color: green;}
+h2 {color: red;}
+h2 {color: blue;}
+h2 {color: orangered; background-color: blue;}
+h2 {color: antiquewhite !important;}

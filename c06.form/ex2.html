@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        body {background-color:#252525 ; color: #a5a5a5;}
+        h1 {color: #ffffff;}
+        li{display: inline;}
+        a {color: #a5a5a5; font-size: 10pt;}
+    </style>
+</head>
+<body>
+    <h1>로그인</h1>
+    <h2>Wavve 계정으로 로그인</h2>
+    <form action="#">
+        <div>
+            <label for="userId" hidden>이메일 주소 또는 아이디</label>
+            <input type="text" name="userId" id="userId" placeholder="이메일 주소 또는 아이디">
+        </div>
+        <div>
+            <label for="userPw" hidden>비밀번호</label>
+            <input type="text" name="userPw" id="userPw" placeholder="비밀번호">
+        </div>
+        <div>
+            <input type="checkbox" name="idSave" id="idSave"> 
+            <label for="idSave">아이디 저장</label>  
+            <input type="checkbox" name="autoLogin" id="autoLogin">
+            <label for="autoLogin">자동로그인</label>
+        </div>
+        <button type="submit">로그인</button>
+    </form>
+    <ul>
+        <li><a href="#">아이디찾기</a></li> &#124;
+        <li><a href="#">비밀번호 재설정</a></li> &#124;
+        <li><a href="#">회원가입</a></li>
+    </ul>
+    <h2>
+        또는 다른 서비스 계정으로 로그인
+    </h2>
+    <ul>
+        <li><a href="#" target="_blank"><img src="./img/ico-common-kakao.png" alt="카카오 로그인" style="background-color: #fff100;"></a></li>
+        <li><a href="#" target="_blank"><img src="./img/ico-common-tworld.png" alt="티월드 로그인" style="background-color: #3617ce;"></a></li>
+        <li><a href="#" target="_blank"><img src="./img/ico-common-naver.png" alt="네이버 로그인" style="background-color: #23b909;"></a></li>
+        <li><a href="#" target="_blank"><img src="./img/ico-common-facebook.png" alt="페이스북 로그인" style="background-color: #3b5998;"></a></li>
+        <li><a href="#" target="_blank"><img src="./img/ico-common-apple.png" alt="애플 로그인" style="background-color: #ffffff;"></a></li>
+    </ul>
+    <p style="font-size: 10pt;">
+        * SNS계정으로 간편하게 가입하여 서비스를 이용하실 수 있습니다.<br>
+        &nbsp; 기존 POOQ 계정 또는 Wavve 계정과는 연동되지 않으니 이용에 참고하세요.
+    </p>
+</body>
+</html>

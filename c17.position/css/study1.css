@@ -1,0 +1,39 @@
+* {margin: 0; padding: 0;}
+.box {
+    border: 10px solid #000;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    /* 현재 위치에서 위치이동 배치된공간
+    body와 html의 기본설정이다. 나머지는 설정이 안되어 있음 기준영역설정 */
+    right: 0px;
+    bottom : 0px;
+}
+.box .a {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    /* 부모의 포지션설정을 확인 후 붙음 
+    사이즈가 없을시 부피는 가지고 있는 컨텐츠 만큼 줄어듬*/
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.box .b {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1;
+    /* z-index 의 숫자가 클수록 위로 올라옴 */
+}
+.box .c {
+    background-color: green;
+    position: fixed;
+    /* 기준영역은 무조건 화면기준 */
+    right: 0;
+    top: 0;
+}

@@ -1,0 +1,30 @@
+*{margin: 0;padding: 0;}
+.box {
+    background-color: pink;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex; 
+    /* 플렉스-컨테이너를 기준으로 플렉스-아이템들이 유동적을 바뀜
+       따로 설정하지 않으면 한줄기준으로 자동 줄바꿈이 암됨 */
+    /* flex-wrap: nowrap;  */
+    /*nowrap, wrap 아이템 줄바꿈 허용유무*/
+    flex-direction: row; 
+    /*메인측기준*/
+    /* justify-content: space-between;  */
+    /*메인측기준*/
+    /* align-items: flex-end;  */
+    /*교차측기준*/
+    /* gap: 10px;  */
+    /*아이템간의 간격이 10px 씩된다.*/
+}
+.box section {
+    border: 1px solid blue;
+    flex: 1;
+    /* flex-shrink: 1; */
+    /*비율-1:1:1비율로 동일하게 줄어들어라*/
+}
+/* .a {flex-basis: 200px;}  */
+/*메인축 기준으로 점유하는 아이템의 크기*/
+/* .b {flex-basis: auto; flex-shrink: 3;}
+.c {flex-basis: auto; flex-grow: 1;} */

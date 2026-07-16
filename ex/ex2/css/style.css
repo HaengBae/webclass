@@ -1,0 +1,60 @@
+html {    
+    font-family: 'Pretendard',sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+.point-type{font-family: "Aboreto", system-ui;}
+.hero-banner {
+    height: 599px;
+    background: url(../img/title_img.png) no-repeat 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.hero-banner h1 {
+    font-family: Aboreto;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.wrap {
+    width: 1600px;
+    margin: 0 auto;
+}
+.con1 {
+    margin-bottom:3rem;
+}
+.con1 h2 {
+    font-family: Aboreto;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 90%;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.con1 p {
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: right;
+    text-transform: uppercase;
+    padding:1rem 0;
+    border-top: 1px solid #000000;
+}
+.inner-figure {
+    margin-top: 3rem;
+}
+.inner-figure img{
+    width: 1000px;
+    height: 430px;
+    object-fit: cover;
+}
+figcaption {
+    font-size: 1rem;
+    line-height: 140%;
+    text-transform: lowercase;
+    margin-top: 1rem;
+}

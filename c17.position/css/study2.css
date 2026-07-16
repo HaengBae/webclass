@@ -1,0 +1,38 @@
+*{margin: 0; padding: 0;}
+.box {
+    text-align: center;
+}
+.box p {
+    padding: 200px 30%;
+}
+.box h2 {
+    font-size: 10vw;
+    position:sticky;
+    /* 부모태그가 화면에 보이는 동안 스티커처럼 보임
+    컨텐츠가 없거나 부모 조상태그에 overflow을 설정하면 안먹힘*/
+    left: 0;
+    top: 0;
+    border: 1px solid red;
+}
+.imgbox {
+    background-color: ivory;
+    padding: 160px 20px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    /* align-items의 기본은 stretch(자동늘어남 이기 때문에
+    꼭 flex-start를 설정해 줘야 스키치 효과를 넣을 수 있따. */
+}
+.imgbox p {
+    padding: 200px 30%;
+}
+.sticky-img {
+    width: 600px;
+    position: sticky;
+    left:0;
+    top: 0;
+
+}
+.sticky-img img{
+    width: 100%;
+}

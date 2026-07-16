@@ -1,0 +1,49 @@
+*{margin: 0; padding: 0;}
+.a {
+   border: 10px solid #000;
+   width: 200px;
+   height: 200px;
+   overflow: hidden;
+   /* 피그마에서 넘침시 숨김기능 */
+}
+.b {
+    border: 10px solid red;
+    width: 200px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    /* 스크롤 */
+}
+
+.c {
+    border: 10px solid red;
+    width: 200px;
+    height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 말줄임 */
+}
+.d {
+    border: 10px solid red;
+    width: 200px;
+    display: -webkit-box;          /* 플렉스형 박스(옛 사양) */
+    -webkit-box-orient: vertical;  /* 세로 방향 줄바꿈 기준 */
+    -webkit-line-clamp: 3;         /* 보여줄 최대 줄 수 */
+    overflow: hidden;              /* 넘치는 내용 숨기기 */
+    text-overflow: ellipsis;       /* 말줄임 표기(보조) */
+}
+/* 스크롤바 스타일 변경 */
+.b ::-webkit-scrollbar{
+    width:20px;
+    height:20px;
+    /*스크롤 크기*/
+}
+.b ::-webkit-scrollbar-thumb{
+    background:blue; /*스크롤 색상*/
+    border-radius: 5px; /*스크롤 둥글리기*/
+}
+.b ::-webkit-scrollbar-track{
+    background: lime;
+    /* border-radius: 10px; */
+    /* 스크롤이 다니는 트랙 */
+}

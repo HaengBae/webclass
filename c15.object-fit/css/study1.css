@@ -1,0 +1,34 @@
+* {margin: 0; padding: 0;}
+h1 {margin: 50px 0;}
+.a {
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    /* contain 컨텐츠 크기 만큼 이미지가 안짤리고 최대한 사이즈에 맞춤
+    cover는 컨텐츠 크기 만큼 이미지가 왜곡 없이 맞춤 이미지는 짤림 */
+}
+.b {
+    border: 1px solid blue;
+    width: 200px;
+    aspect-ratio: 1/1;
+    /* 이미지 비율의 나타냄 가로 세로 비율 */
+    object-fit: cover;
+}
+figure {
+    border: 1px solid green;
+    width: 300px;
+    aspect-ratio: 1/1;
+    line-height: 0;
+    border-radius: 300px;
+    overflow: hidden;
+}
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: : all 1s ease 0s;
+}
+figure:hover img {
+    transform: scale(1.3);
+}

@@ -1,0 +1,59 @@
+
+html {
+    font-size: 16px;
+    font-family: "페이퍼로지", 'Aggravo', "Inter", sans-serif;
+    font-weight: 400;
+}
+.a {
+    font-size: 2rem;
+}
+.b {
+    font-size: 16px;
+}
+.b p {
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.38; /*행간*/
+    font-style: normal;
+}
+/*rem = html , em = 부모태그 에 영향을 받는다.*/
+address {
+    font-style: normal;
+}
+.c {
+    letter-spacing: -4px;/*글자 사이에 자간*/
+    word-spacing: 20px; /*단어 사이에 자간*/
+}
+.d {
+    /* white-space: nowrap;  */
+    white-space: pre-wrap;
+}
+/*공백 설정 - nowrap=한줄설정, 
+pre = 글씨가 코딩한거랑 똑같이 됨 (띄어쓰기/엔터 등) 
+pre-wrap = 브라우저 크기만큼 자동 줄바꿈됨 보통 약관/개인정보 등에 많이 쓰임
+*/
+.e {
+    text-indent: 50px; /*첫줄 들여쓰기*/
+    text-transform: uppercase;
+    /*uppercase = 모든 영문자 대문자, lowercase = 모두 소문자, capitalize = 단어마다 앞 글자 대문자*/
+    word-break: break-all;
+    /* keep-all = 기본값 단어를 안쪼갬,  break-all = 모든단어를 rap에 맞춰서 쪼갬*/
+}
+.g span{
+    text-align: left;
+    /*justify = 양쪽정렬*/
+    text-decoration: underline;
+    /*line-through = 가운데 라인 취소선, underline = 하단라인*/
+}
+.h {
+    font-family: "페이퍼로지";
+    font-weight: 700;
+}
+.i {
+    font-family: "Aggravo";
+    font-weight: 700;
+}
+.j {
+    font-family: "Yuyu", sans-serif;
+    font-weight: 200;
+}

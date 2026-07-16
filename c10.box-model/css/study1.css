@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*모든 태그의 기본설정되어 있는 마진과 패딩값을 설정*/
+.a-box {
+    border-left: 10px solid red;
+    border-right: 1px solid red;
+    border-top: 1px dashed blue;
+    border-bottom: 1px dotted green;
+    border: 1px solid #f5f;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.b-box {
+    border: 1px solid black;
+    margin: 50px;
+    padding: 20px;
+}
+.c-box {
+    border: 1px solid black;
+    margin: 100px 50px;
+    padding: 30px 10px;
+}
+.d-box {
+    border: 1px solid black;
+    margin: 100px 50px 200px;
+    padding: 10px 20px 30px 40px;
+}
+.e-box {
+    border: 10px solid black;
+    /* height: 30px; */
+    width: 400px; /*컨텐트박스 넓이임 패딩값적용해도 바뀌지 않음*/
+    padding: 20px;
+    /*여기 박스의 크기는 컨텐츠박스 width 400px + 패딩 40px + 보더 2px = 442 사이즈임*/
+}
+.g-box {
+    border: 10px solid red;
+    width: 400px; 
+    padding: 20px;
+    box-sizing: border-box;
+    /*보더를 기준으로 width 값이 설정되기 때문에 컨텐트박스 사이즈는 340px 이다.*/
+    /*기준을 잘 봐야 함!*/
+}
+.h-box {
+    border: 10px solid black;
+    width: 1000px;
+    margin: 0px auto; /*고정너비 가변여백*/
+}

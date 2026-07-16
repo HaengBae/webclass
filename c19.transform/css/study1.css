@@ -1,0 +1,39 @@
+* {margin: 0; padding: 0;}
+.box {
+    border: 4px solid #000;
+    width: 300px;
+    height: 300px;
+    margin: 200px auto;
+    transition: all 1s ease 0s;
+}
+.box-wrap {
+    perspective: 500px;
+    /*  translateZ를 사용하기 위해 부모공간이 3D공간으로 만들어줘야 함
+    입체적공간 아래 hover와의 공간이 적을수록 입체감이 뚜렷하여 크게보임 */
+    perspective-origin: 10% 50%;
+    /* 이동공간의 기준이됨 50%는 중심 */    
+}
+.a {background-color: red;}
+.a:hover {
+    /* transform: translateX(100px)translateY(100px)translateZ(20px); */
+    /* 하단이 축약형 */
+    transform: translate3d(200px,100px,20px);
+    /* , 구분없이 써야함 */
+    /* transform: translateZ(100px); */
+    /* %는 본인의 넓이의 %만큼 이동 */
+}
+.b {background-color:lime;}
+.b:hover {
+    transform: perspective(300px)rotateY(360deg);
+}
+.c {
+    background-color: orange;
+    transform-origin: 0% 100%;
+    /* 변형의 기준 기본값은 50%임 */
+}
+.c:hover {transform: scale(1.5);}
+/* 원래크기의 (숫자)배 만큼 커지고 작아짐 기준은 1=100% */
+.d {background-color: green;}
+.d:hover {
+    transform: skewY(-30deg);
+}

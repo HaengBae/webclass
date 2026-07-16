@@ -1,0 +1,10 @@
+main>h2 {color: red;}
+main h3 {color: blue;}
+.list>li {color: gold;}
+.list>li:nth-of-type(3n+1){color: salmon;}
+.list~p:nth-of-type(2)+p~p {
+    border: 1px solid blue;
+    padding: 20px;
+}
+a[target="_blank"] {color: brown;} /*태그속성값에 해당되는내용*/
+h1,h2,h3 {font-style: italic;} /*그룹선택문자*/
