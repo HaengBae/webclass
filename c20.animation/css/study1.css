@@ -1,0 +1,50 @@
+* {margin: 0; padding: 0;}
+.a {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    right: 100px;
+    top: 100px;
+}
+.b {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: fixed;
+    right: 40%;
+    bottom: 20%;
+}
+.c {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: fixed;
+    left: 15%;
+    top: 10%;
+}
+@keyframes myrotate {
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(180deg)scale(1.5);}
+    25% {background-color: aqua;}
+    100% {transform: rotate(360deg);}
+}
+.rotate {
+       /* animation-name: myrotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    /* 하단이 축약형 */
+    animation: myrotate 2s linear 0s 3;
+    /* infinite은 무한으로 돌아감 1은 1바퀴
+        기본은  0% -> 100%일때
+        revers은 100% -> 0%로감 반대로
+        alternate 100%->0%->100로이동 양자선택 왔다 갔다함
+    */
+}
+.rotate:hover {
+    animation-play-state: paused;
+    /*마우스 올렸을때 멈춤*/
+}
