@@ -1,0 +1,25 @@
+* {margin: 0; padding: 0;}
+.wrap {
+    background-color: beige;
+    transition: all 1s ease 0s;
+}
+@media (min-width:1600px) {
+    body {background-color: palevioletred;}
+    /* 2000px 이상인 경우 */
+}
+@media (min-width:800px) and (max-width:1500px) {
+    body {background-color: gold;}
+}
+@media (max-width:1024px){
+    .wrap {background-color: red;}
+    /* 탭화면 */
+}
+@media (max-width:768px) {
+    .wrap {background-color: blue;}
+    /* 모바일화면 */
+}
+@media (max-width:480px) {
+    .wrap {background-color: green;}
+    /* 280px 화면까지 대응함 */
+}
+/* 브레이크포인트 : 브라우저 화면 픽셀 */

@@ -59,3 +59,20 @@ figure {
 .values ul li:last-of-type {
     margin-bottom: 0px;
 }
+
+@media (max-width:1400px) {
+    html {font-size: 18px;}
+    .inner-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .title p br {display: none;}
+}
+@media (max-width:768px) {
+    html {font-size: 14x;}
+    .inner-frame {
+        width: auto;
+        margin: 0 1rem;
+    }
+
+}

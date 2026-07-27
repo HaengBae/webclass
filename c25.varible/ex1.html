@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적표</title>
+    <link rel="stylesheet" href="css/ex1.css">
+</head>
+<body>
+    <script>
+        let usreName = prompt('당신의 이름을 입력해주세요.')
+        let scroeKo = Number(prompt('국어점수는?'))
+        let scroeEn = Number(prompt('영어점수는?'))
+        let scroeMa = Number(prompt('수학점수는?'))
+        let scroeSo = Number(prompt('사회점수는?'))
+        let sum = scroeKo+scroeEn+scroeMa+scroeSo
+        let average = (sum/4).toFixed(1)
+        
+        document.write (`<table>
+        <caption>${usreName}님의 성적표</caption>
+        <tr>
+            <th>이름</th>
+            <td>${usreName}</td>
+        </tr>
+        <tr>
+            <th>국어</th>
+            <td>${scroeKo} 점</td>
+        </tr>
+        <tr>
+            <th>영어</th>
+            <td>${scroeEn} 점</td>
+        </tr>
+        <tr>
+            <th>수학</th>
+            <td>${scroeMa} 점</td>
+        </tr>
+        <tr>
+            <th>사회</th>
+            <td>${scroeSo} 점</td>
+        </tr>
+        <tr>
+            <th>합계</th>
+            <td>${sum} 점</td>
+        </tr>
+        <tr>
+            <th>평균</th>
+            <td>${average} 점</td>
+        </tr>
+    </table>`)
+    </script>
+</body>
+</html>

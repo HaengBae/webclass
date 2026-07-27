@@ -12,6 +12,7 @@ main {
 }
 .hero-banner {
     height:599px;
+    width: 100%;
     background: url("../img/hero-img.png") no-repeat 50% 50% / cover;
     color:#fff;
     display: flex;
@@ -20,8 +21,9 @@ main {
     border-radius: 0px 0px 150px 150px;
 }
 .hero-banner h1{
-    font-size: 2.5rem;
+    font-size: 50px;
     line-height: 100%;
+    text-align: center;
     text-transform: uppercase;
 }
 .container {
@@ -73,4 +75,57 @@ main {
 }
 .description p strong{
     text-transform: capitalize;
+}
+.description h3 br {display: none;}
+
+
+
+@media (max-width:1610px) {
+    .container {
+        width: auto;
+        margin: 0 2rem;
+    }    
+}
+@media (max-width:1024px) {
+    html {font-size: 18px;}
+    .container {padding-bottom: 218px;}
+    .cafe-figure figure img {
+     aspect-ratio: 467/434;
+    
+}
+}
+@media (max-width:810px) {
+    html {font-size: 14px;}
+    .con1 h2 {
+    font-size: 50px;
+    }
+}
+@media (max-width:768px) {
+    main {
+        background: url(../img/dot-bg.png) no-repeat 50% 740px;
+    }
+    .container {
+        width: auto;
+        margin: 0 1rem;
+    }    
+    .hero-banner {
+        border-radius: 0 0 80px 80px;
+    }
+    .con1 {
+        background: url(../img/deco-line.png) no-repeat 50% -40px;
+    }
+    .cafe-figure {
+        flex-direction: column;
+    }
+    .cafe-figure figure img {
+        width: 100%;
+        aspect-ratio: 365/200;  
+    }
+    .description h3 br {display: inline;}
+}
+@media (max-width:340px){
+    .con1 h2 {
+    font-size: 43px;
+    }
+
 }

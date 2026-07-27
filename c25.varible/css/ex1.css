@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Pretendard:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 40px 20px;
+    color: #243047;
+    font-family: "Pretendard", "Gowun Dodum", sans-serif;
+    background:
+        radial-gradient(circle at 10% 10%, #dbeafe 0, transparent 28%),
+        radial-gradient(circle at 90% 85%, #ddd6fe 0, transparent 32%),
+        #f7f9fc;
+}
+
+table {
+    width: min(100%, 560px);
+    overflow: hidden;
+    border: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 0px;
+    background: #fff;
+    box-shadow: 0 18px 45px rgba(60, 79, 118, 0.16);
+}
+
+caption {
+    padding: 30px 24px 25px;
+    color: #fff;
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+caption::before {
+    content: "2026 1학기";
+    display: block;
+    margin-bottom: 7px;
+    color: #ddd6fe;
+    font-family: "Pretendard", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+th,
+td {
+    padding: 16px 24px;
+    border-bottom: 1px solid #edf0f7;
+    font-size: 0.98rem;
+}
+
+th {
+    width: 42%;
+    color: #55627a;
+    font-weight: 600;
+    text-align: left;
+    background: #f8f9fd;
+}
+
+td {
+    color: #1f2a44;
+    font-weight: 600;
+    text-align: right;
+}
+
+tr:first-of-type td {
+    color: #4f46e5;
+    font-size: 1.06rem;
+}
+
+tr:nth-last-child(2) th,
+tr:nth-last-child(2) td {
+    color: #4338ca;
+    background: #eef2ff;
+}
+
+tr:last-child th,
+tr:last-child td {
+    border-bottom: 0;
+    color: #fff;
+    font-size: 1.06rem;
+    background: #4f46e5;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    caption {
+        padding: 25px 18px 21px;
+        font-size: 1.4rem;
+    }
+
+    th,
+    td {
+        padding: 14px 18px;
+    }
+}

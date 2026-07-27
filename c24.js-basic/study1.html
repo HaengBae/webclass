@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트기초</title>
+</head>
+<body>
+    <script>
+        //자바스크립트 언어만 사용 가능한 영역
+        // alert ("팝업")
+        console.log("내용을 넣어 봐~~~~~~~~~~~~~~~~~요");
+        console.log("방가방가방가");
+        // 경고팝업
+        "윤희정"
+        '윤희정'
+        // `윤희정`
+        "윤"+"희"+"정"
+        console.log("윤희정yoon정윤희정".length) //총 글자갯수
+        console.log("윤+"+"희+"+"정")
+        console.log("행배윤희정"[0]+"행배윤희정"[1]) //"행"이라 같음[보여질글자]
+        console.log("he's a doctor")
+        
+        123
+        console.log (100+10)
+        console.log (100-10)
+        console.log (100*10)
+        console.log (100/10)
+        console.log (100/10+4)
+        console.log (100+20/10)
+        console.log ((100+20)/10)
+        console.log (10%3) //나머지
+        console.log (10**2) //**은 제곱 10의 2제곱임
+        console.log ("100"+10) // ""은 문자이기 때문에 뒤에도 문자로 이어진다. 10010
+        console.log ((100+"행배윤희정".length)*3)
+        console.log (("행배윤희정"[0]+"행배윤희정"[2]).length+10)
+
+        console.log (typeof("윤희정"))  // "문자"타입이라는 영어로 string 표시
+        console.log (typeof(100))       // "숫자"타입이라는 영어로 number 표시
+        console.log (typeof(typeof(100))) // = typof ("number") = string
+        console.log ("100"*2) //(문자+-*/숫자)에서  +,-는 1002로 문자로 인식하지만 *,/ 의 경우 숫자로 인식 200으로 표시
+        console.log (Number("100")*2) //문자를 숫자로 인식
+        console.log (String(100).length) // 숫자를 문자로 인식 문자가 "100" 이니깐 글자개수 3
+
+
+        //prompt("이름을 무엇인가요?") // 팝업에 입력값을 넣게 하기 위해서 사용 (사용자가 입력한 출력값이 문자형태로 저장)
+        //confirm ("이대로진행할까요?") //확인,취소로 전송
+        //document.write('<h1>'+prompt("이름이 무엇인가요?")+'님 방가방가</h1>') 
+        //body 태그안에 함수가 쓰임, 안에 태그를 쓸수 있다.
+        //"문자" + "입력값에 대한 코드" + "문자"
+        document.write(`<h1>${prompt("이름이 무엇인가요?")}님 방가방가</h1>`) //위에 표현보다 지금 ``안에 ${코드값} 입력을 더 많이 함. 홋따음표가 아님!
+        
+
+
+
+
+        
+    </script>
+    <h2>그래요. 방갑습니다.</h2>
+
+</body>
+</html>
