@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="css/ex2.css">
+</head>
+<body>
+    <main>
+        <h1>나의 체질량지수 BMI</h1>
+        <p>체질량지수(BMI)는 자신의 몸무게(kg)를 키의 제곱(m²)으로 나눈 값입니다. 체질량지수는 근육량, 유전적원인, 다른 개인적 차이를 반영하지 못하는 단점이 있음에도 불고하고 조사자들이나 의료인들이 가장 많이 ㅆ는 방법중 하나 입니다.</p>
+    <script>
+        let usreName = prompt("당신의 이름을 입력해주세요.");
+        let usreWeight = Number(prompt("몸무게(kg)를 입력해주세요."));
+        let usreHeight = Number(prompt("키(cm)를 입력해주세요."));
+        let usreBmi =(usreWeight/((usreHeight/100)**2)).toFixed(2)
+
+        document.write (`
+        <dl>
+            <dt>이름</dt>
+            <dd>${usreName}</dd>
+            <dt>체중</dt>
+            <dd>${usreWeight}kg</dd>
+            <dt>키</dt>
+            <dd>${usreHeight}cm</dd>
+            <dt>BMI 지수</dt>
+            <dd>${usreBmi}</dd>
+        </dl>`)
+    </script>    
+        <div class="bmi" aria-label="BMI 구간 그래프">
+            <ul class="bmi-scale">
+                <li>BMI</li>
+                <li>18.5</li>
+                <li>23</li>
+                <li>25.0</li>
+            </ul>
+            <ul class="bmi-bar">
+                <li>저체중</li>
+                <li>정상</li>
+                <li>과체중</li>
+                <li>비만</li>
+            </ul>
+            <ul class="bmi-result">
+                <li>체중</li>
+            </ul>
+        </div>
+    </main>
+
+    
+</body>
+</html>

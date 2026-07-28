@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 12% 12%, #dbeafe 0, transparent 31%),
+        radial-gradient(circle at 88% 84%, #d1fae5 0, transparent 28%),
+        #f8fafc;
+    color: #1e293b;
+    font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+}
+
+main {
+    width: min(720px, calc(100% - 40px));
+    margin: 72px auto;
+    padding: 42px;
+    background: rgb(255 255 255 / 88%);
+    border: 1px solid rgb(255 255 255 / 80%);
+    border-radius: 20px;
+    box-shadow: 0 18px 45px rgb(51 65 85 / 12%);
+    backdrop-filter: blur(8px);
+}
+
+h1 {
+    margin: 0 0 14px;
+    padding-bottom: 0;
+    color: #172554;
+    font-size: clamp(30px, 5vw, 36px);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    line-height: 1.2;
+}
+
+h1::after {
+    display: block;
+    width: 42px;
+    height: 4px;
+    margin-top: 14px;
+    border-radius: 4px;
+    background: #3b82f6;
+    content: "";
+}
+
+p {
+    margin: 0 0 28px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* dl을 2열 표처럼 표시 */
+dl {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    margin: 0 0 38px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+dt,
+dd {
+    margin: 0;
+    padding: 14px 18px;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+dt:nth-last-of-type(1),
+dd:last-child {
+    border-bottom: 0;
+}
+
+dt {
+    background: #f8fafc;
+    color: #475569;
+    font-weight: 700;
+}
+
+.bmi ul {
+    display: grid;
+    grid-template-columns: 6fr 5fr 4fr 8fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 막대 위의 기준 수치: 각 구간의 시작 위치에 맞춘다. */
+.bmi-scale {
+    align-items: end;
+    min-height: 32px;
+    color: #667085;
+    font-size: 14px;
+}
+
+.bmi-scale li:not(:first-child) {
+    border-left: 1px solid #98a2b3;
+    padding-left: 7px;
+}
+
+.bmi-scale li:first-child {
+    align-self: center;
+    font-weight: 700;
+    color: #344054;
+}
+
+/* 네 구간을 하나의 가로 막대그래프로 만든다. */
+.bmi-bar {
+    overflow: hidden;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.bmi-bar li {
+    display: grid;
+    min-height: 48px;
+    place-items: center;
+}
+
+.bmi-bar li:nth-child(1) { background: #93c5fd; }
+.bmi-bar li:nth-child(2) { background: #4fbb85; }
+.bmi-bar li:nth-child(3) { background: #f6b84a; }
+.bmi-bar li:nth-child(4) { background: #ee7771; }
+
+/* 결과 표시는 막대 아래 앞쪽에서 시작한다. */
+.bmi-result {
+    grid-template-columns: 1fr !important;
+    margin-top: 10px !important;
+    color: #475467;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.bmi-result li::before {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;
+    border-radius: 50%;
+    background: #344054;
+    content: "";
+}
+
+@media (max-width: 520px) {
+    main { margin: 24px auto; padding: 28px 20px; }
+    dl { grid-template-columns: 100px 1fr; }
+    dt, dd { padding: 12px; }
+    .bmi-bar { font-size: 12px; }
+}
