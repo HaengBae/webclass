@@ -38,8 +38,11 @@ html {
     text-transform: uppercase;
 }
 .signature {
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     margin: 5rem auto 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 .signature .subtitle {
     text-align: center;
@@ -53,18 +56,25 @@ html {
 }
 .signature ul {
     display: flex;
-    gap :1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.signature ul li {
+    flex: 1 1 300px;
+    min-width: 260px;
 }
 .signature ul li figure {
-    flex: 1;
-    aspect-ratio: 3/1;
-    min-height: 0;
+    width: 100%;
+    aspect-ratio: 520 / 518.65;
+    overflow: hidden;
+    border-radius: 1rem;
 }
 .signature ul li figure img {
     width: 100%;
-    height: 518px;
-    border-radius: 1rem;
+    height: 100%;
+    display: block;
     object-fit: cover;
+    object-position: center;
 }
 .signature ul li h4 {
     font-weight: 700;    
@@ -72,77 +82,19 @@ html {
     margin : 1rem 0 0.5rem 0;
 }
 
-/*
-
-.figure-caption {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.figure-caption h3 {
-    font-size: 2rem;
-    line-height: 140%;
-    text-transform:uppercase;
-}
-.figure-caption p {
-    line-height: 140%;
-    text-transform: capitalize;
-}
-.cafe-figure.asr figure{
-    flex: 1;
-    aspect-ratio: 790/434;
-}
-
-@media (max-width:1600px) {
+@media (max-width:1625px) {
     .wrap {
         width: auto;
         margin: 0 2rem;
     }
+    .signature ul li figure {
+        aspect-ratio: 305/300;
+    }
 }
 @media (max-width:1024px) {
     html {font-size: 18px;}
-    .container h2 {font-size: 80px;}
-    .container > p {
-        margin: 48px 0;
-    }
-    .cafe-figure.asr figure{
-        flex: 1;
-        aspect-ratio: 467/434;
-    }
 }
 @media (max-width:768px) {
     html {font-size: 14px;}
-    .container h2 {font-size: 50px;}
-    .container > p {
-        margin: 48px 0;
-    }
-    .cafe-figure figure{
-        width: 100%;
-        min-height: 0;
-    }
-    .cafe-figure.col {
-        display: grid;
-        gap: 1rem 1rem;
-        grid-template-columns :repeat(2,1fr);
-    }
-    .cafe-figure.col figure{
-        aspect-ratio: 175/150;
-    }
-    .cafe-figure.col figure:last-of-type{
-        grid-column: 1/3;
-        aspect-ratio: 365/150;
-    }
-    .cafe-figure.asr {
-        flex-direction: column;
-    }
-    .cafe-figure.asr figure{
-        aspect-ratio: 365/150;
-    }
 }
-@media (max-width:390px) {
-    .hero-banner h1 {
-    font-size: 1.6rem;}
-    .cafe-figure.asr figure{
-        aspect-ratio: auto/150;
-    }    
-}*/
+@media (max-width:390px) {}

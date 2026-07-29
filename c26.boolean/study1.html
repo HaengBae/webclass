@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+</head>
+<body>
+    <script>
+        //블리언데이터 : 참, 거짓
+        //거짓 false, 진실 true, 같음 === 등호 3개,  같지 않다.!== , !는 반대를 나타냄
+        10>9    //true
+        10<9    //false
+        10===10 //true
+        10>=9   //true
+        10<=9   //true
+        10!==10 //false
+        !(10>9) //false = true의 반대로 false임
+        !!(10>9)//true = true의 반대의 반대!
+        
+        console.log(!!(10>9))
+        console.log(0)
+        console.log('')
+        let a;
+        console.log(a)
+        let b=null;
+
+        20 // ture로 "간주"되는 것
+        20>10 // true로 "계산"되는것
+        
+
+    </script>
+    <h1>있으면 true / 없으면 false</h1>
+    <p>false로 간주되는 경우</p>
+    <ul>
+        <li>숫자데이터인데 값이 0</li>
+        <li>문자데이터인데 내용이 없음</li>
+        <li>변수를 선언했는데 초기화 하지 않은 경우</li>
+        <li>undefined = 값을 지정하지 않아서 없는 상태</li>
+        <li>null = 데이터를 깨끗하게 지워 놓은 상태</li>
+    </ul>
+</body>
+</html>

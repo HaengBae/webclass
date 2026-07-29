@@ -15,6 +15,7 @@
         let scroeSo = Number(prompt('사회점수는?'))
         let sum = scroeKo+scroeEn+scroeMa+scroeSo
         let average = (sum/4).toFixed(1)
+        let grade = Number(average)>90?"1등급":Number(average)>80?"2등급":Number(average)>70?"3등급":Number(average)>60?"4등급":"5등급";
         
         document.write (`<table>
         <caption>${usreName}님의 성적표</caption>
@@ -46,7 +47,12 @@
             <th>평균</th>
             <td>${average} 점</td>
         </tr>
+        <tr>
+            <th>등급</th>
+            <td>1등급</td>
+        </tr>
     </table>`)
     </script>
+    
 </body>
 </html>
