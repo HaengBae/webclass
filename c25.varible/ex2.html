@@ -15,6 +15,7 @@
         let usreWeight = Number(prompt("몸무게(kg)를 입력해주세요."));
         let usreHeight = Number(prompt("키(cm)를 입력해주세요."));
         let usreBmi =(usreWeight/((usreHeight/100)**2)).toFixed(2)
+        let grade =Number(usreBmi)>=25?'비만':Number(usreBmi)>=23?'과체중':Number(usreBmi)>=18.5?'정상':'저체중'
 
         document.write (`
         <dl>
@@ -26,7 +27,10 @@
             <dd>${usreHeight}cm</dd>
             <dt>BMI 지수</dt>
             <dd>${usreBmi}</dd>
+            <dt>비만도 상태</dt>
+            <dd>${grade}</dd>
         </dl>`)
+
     </script>    
         <div class="bmi" aria-label="BMI 구간 그래프">
             <ul class="bmi-scale">
