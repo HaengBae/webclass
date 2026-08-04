@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object - 객체사물 </title>
+</head>
+<body>
+    <script>
+
+        let person = {name:"홍길동",gender:"남자",marride:false}
+        //객체사물 : 배열값이 [값]만 저장되는게 아니라 {이름과 값이 함께} 저장됨
+        // {key:value} = 속성프로퍼티
+        // key = 변수
+
+
+        console.log (person.name)       //홍길동
+        console.log (person["gender"])  //남자
+        console.log (person.name[1])    //길
+        console.log (person["gender"].length)   // 2
+
+        let person2 = {name:'영심이', gender:'여자', marride:true}
+        console.log (person2.name)  //영심이
+        person2.name = '하니'
+        console.log (person2)
+        console.log (person2.name)  //하니
+
+        let newPerson = {...person,age:40,name:"갑돌이"}
+        // ... 전개 연산자
+        console.log (newPerson)
+
+
+
+    </script>
+    
+</body>
+</html>
