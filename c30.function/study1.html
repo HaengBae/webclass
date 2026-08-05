@@ -17,7 +17,7 @@
             alert('안녕하세요.')
         }
         //실행부
-        //a()
+        //a라는 함수의(매게변수){}
 
 
         function b(name,age){
@@ -31,6 +31,59 @@
 
         //function b(매개변수)
         //b(인자)
+        function c(person){
+            document.write(`<p>${person[0]}님 반갑습니다.</p>`)
+            document.write(`<p>${person[0]}님은 ${person[1]}세 이시군요.</p>`)             
+        }
+        c(['홍길동',50])
+
+        function d(person){
+            document.write(`<p>${person.name}님 반갑습니다.</p>`)
+            document.write(`<p>${person.name}님은 ${person.age}세 이시군요.</p>`)
+        }
+
+        d({name:"홍길동", age:44})
+
+        function e(){
+            alert('히히')
+            return  3
+            alert('헤헤')
+        }
+        //return = 실행하는 과정에서 함수는 종료됨. 또는 계산 결과를 보여줨
+
+        //e() e는 리턴값에 3이 계산되서 e(3)이 표시됨
+
+        // alert(e())
+
+        // let result1 = e()
+        // console.log (result1)
+
+
+        function g(name){
+            document.write(`<p>${name}님 좋은아침입니다.</p>`)
+            return name[0]
+        }
+
+        // let user = g('홍길동') // 홍이 저장됨.
+        // alert(user)
+
+
+        function g2(name){
+            document.write(`<p>${name}님 좋은아침입니다.</p>`)
+            return {name:name}
+        }
+
+        // let user = g2('홍길동') 
+        // alert(user.name)
+        
+        function getAver(score){
+            return(score[0]+score[1]+score[2])/3
+        }
+        // let sc =  getAver([1,2,3])
+        // alert(sc)
+
+        alert(getAver([1,2,3]))
+
 
 
 
