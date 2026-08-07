@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열함수</title>
+</head>
+<body>
+    <script>
+        //[배열]. 점찍구 함수
+        //forEach(콜백함수 = 매게변수가 3개가 쓰임,) = (원소,원소의 순번,전체배열)
+        let fruits = ['사과','수박','복숭아'];
+        // fruits.forEach(function(el,index,array){
+        //     console.log(el,index,array)
+        // })
+
+        //fruits.forEach(el=>console.log(el+' 사주세요.'));
+        //매게변수가 하나 일경우 생략문구 사용가능
+
+        // let newFruits = fruits.map(function(el){
+        //     return el + '당'
+        // })
+        // console.log(fruits, newFruits)
+
+        let newFruits = fruits.map(el=>el+'당');
+        console.log(fruits, newFruits);
+        //메게변수 하나일경우 생략문구 사용가능
+
+
+        let a = [1,2,3,4,5,6,7,8,9,10];
+        // let b = a.filter(function(el){return el>=5})
+        // console.log(b)
+        let b = a.filter(el=>el>=5)
+        console.log(b)
+        //매게변수 하나일경우 생략문구 사용가능
+        
+
+
+    </script>
+</body>
+</html>
