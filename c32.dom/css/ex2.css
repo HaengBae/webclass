@@ -1,0 +1,20 @@
+.tabs{
+    display: flex;
+    gap: 10px;
+}
+.tabs div {
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 4px 12px;
+}
+.tabs div.on {
+    /*꾸미기 선택사항*/
+    background-color: #333;
+    color: #fff;
+}
+.tab-contens>div {
+    display: none;
+}
+.tab-contens>div.on {
+    display: block;
+}
