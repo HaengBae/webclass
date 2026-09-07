@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap');
+
+:root {
+    --bg-color: #f4f7ff;
+    --panel-color: #ffffff;
+    --primary-color: #3556d8;
+    --primary-soft: #e9eeff;
+    --text-color: #1f2937;
+    --muted-color: #475569;
+    --border-color: #dbe2f1;
+    --accent-color: #7c9cff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 72px clamp(20px, 6vw, 80px) 100px;
+    font-family: 'Noto Sans KR', 'Segoe UI', sans-serif;
+    line-height: 1.9;
+    color: var(--text-color);
+    background: linear-gradient(180deg, #f5f8ff 0%, #eef3ff 100%);
+}
+
+body > * {
+    width: min(100%, 960px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3 {
+    color: #1d3557;
+    line-height: 1.3;
+    margin: 0 0 16px;
+    text-align: left;
+}
+
+h1 {
+    font-size: clamp(2.1rem, 3vw, 3rem);
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 24px;
+    letter-spacing: -0.04em;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(53, 86, 216, 0.15);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 2vw, 2.1rem);
+    margin-top: 52px;
+    margin-bottom: 18px;
+    padding: 14px 18px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(53, 86, 216, 0.12);
+    border-left: 6px solid var(--primary-color);
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(30, 41, 59, 0.04);
+}
+
+p,
+li,
+address {
+    font-size: 1.04rem;
+    color: var(--text-color);
+}
+
+p {
+    margin: 0 0 18px;
+}
+
+ol,
+ul {
+    width: 100%;
+    margin: 0 auto 20px;
+    padding-left: 28px;
+}
+
+ol li,
+ul li {
+    margin-bottom: 10px;
+}
+
+ol[style*="list-style: none;"] {
+    list-style: none;
+    padding-left: 0;
+}
+
+ol[style*="list-style: none;"] li {
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.02);
+}
+
+ul {
+    padding-left: 22px;
+}
+
+ul li::marker {
+    color: var(--primary-color);
+}
+
+blockquote {
+    width: min(100%, 960px);
+    margin: 30px auto 24px;
+    padding: 18px 20px;
+    border-left: 6px solid var(--accent-color);
+    background: linear-gradient(135deg, var(--primary-soft), #f9faff);
+    border-radius: 12px;
+    color: #334155;
+    font-style: italic;
+    box-shadow: 0 8px 18px rgba(30, 41, 59, 0.03);
+}
+
+address {
+    width: min(100%, 960px);
+    margin: 0 auto 24px;
+    padding: 20px 22px;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.82);
+    font-style: normal;
+    line-height: 1.8;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.03);
+}
+
+strong,
+b {
+    color: #0f172a;
+}
+
+em,
+i {
+    color: #334155;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+a:hover,
+a:focus {
+    color: #1e3a8a;
+    text-decoration: underline;
+}
+
+body > ul:last-of-type {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+    width: min(100%, 960px);
+}
+
+body > ul:last-of-type li {
+    margin-bottom: 0;
+    background: #edf3ff;
+    border: 1px solid #d9e4ff;
+    border-radius: 999px;
+    padding: 8px 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body > ul:last-of-type li:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(53, 86, 216, 0.12);
+}
+
+body > ul:last-of-type li a {
+    display: inline-block;
+}
+
+
+.ltr {
+    transition: all 0.5s ease 0s;
+    transform: translateX(-30px);
+    opacity: 0;
+}
+.ltr.on{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.fade {
+    transition: all 1s ease 0s;
+    opacity: 0;
+}
+.fade.on {
+    opacity: 1;
+}
+.fog {
+    transition: all 1s ease 0s;
+    filter: blur(10px);
+}
+.fog.on {
+    filter: blur(0px);
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 40px 18px 60px;
+    }
+
+    ol, ul {
+        padding-left: 18px;
+    }
+
+    body > ul:last-of-type {
+        flex-direction: column;
+    }
+}
