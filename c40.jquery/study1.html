@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery - 제이쿼리</title>    
+    <script src="./js/jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <h1>title</h1>
+    <script>
+        // const h1Tag = document.querySelector('h1');
+        const h1 = $('h1')
+        h1.css('color','blue')
+        h1.css('background-color','gold')
+    </script>
+    <ul class="list">
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+    <script>
+      const listTag = document.querySelectorAll('.list>li')
+      listTag.forEach((li)=>{
+        li.style.fontSize = '30px'
+      });
+
+      const list = $('.list>li')
+      list.css('font-size','50px')
+
+
+    </script>
+</body>
+</html>
